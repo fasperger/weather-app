@@ -6,7 +6,7 @@ const app = express();
 
 app.get("/", function(req, res){
     
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=mexico&units=metric&appid=22e47705da4bbf6ad45eb6a64e67ca5d";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=mexico&units=metric&appid=";
     https.get(url, function(response){
 
         response.on("data", function(data){
